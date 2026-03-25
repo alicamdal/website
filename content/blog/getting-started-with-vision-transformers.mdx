@@ -1,0 +1,49 @@
+---
+title: "Getting Started with Vision Transformers"
+date: "2024-03-01"
+tags: ["computer-vision", "transformers", "deep-learning"]
+excerpt: "A practical introduction to ViT and how it compares to CNNs for image classification tasks."
+---
+
+Vision Transformers (ViT) marked a turning point in computer vision by demonstrating that the Transformer architecture — originally designed for NLP — could match and eventually surpass convolutional neural networks (CNNs) on image classification benchmarks.
+
+## What is a Vision Transformer?
+
+ViT splits an image into a fixed grid of non-overlapping patches (e.g. 16×16 pixels), flattens each patch into a vector, projects it linearly, and feeds the resulting sequence of token embeddings into a standard Transformer encoder. A learnable `[CLS]` token aggregates global information for classification.
+
+```python
+import torch
+from transformers import ViTForImageClassification, ViTFeatureExtractor
+
+model = ViTForImageClassification.from_pretrained('google/vit-base-patch16-224')
+feature_extractor = ViTFeatureExtractor.from_pretrained('google/vit-base-patch16-224')
+
+# Prepare image
+inputs = feature_extractor(images=image, return_tensors="pt")
+outputs = model(**inputs)
+logits = outputs.logits
+predicted_class = logits.argmax(-1).item()
+```
+
+## ViT vs CNN: Key Differences
+
+| Aspect | CNN | ViT |
+|--------|-----|-----|
+| Inductive bias | Strong (locality, translation equivariance) | Weak |
+| Data efficiency | High | Low (needs large datasets or pretraining) |
+| Global context | Limited (grows with depth) | Full from layer 1 |
+| Scalability | Good | Excellent |
+
+## Why ViT Matters for Remote Sensing
+
+Remote sensing imagery poses unique challenges: large spatial extent, fine-grained objects, and multi-scale structure. The global attention mechanism in ViT is naturally suited to capturing long-range spatial dependencies — for instance, the relationship between a building and its shadow hundreds of pixels away.
+
+> **Tip:** When applying ViT to remote sensing, consider using geospatial foundation models like SatMAE, Scale-MAE, or GFM that are pretrained on satellite imagery rather than ImageNet.
+
+## Practical Considerations
+
+1. **Patch size matters** — smaller patches capture more detail but increase sequence length quadratically.
+2. **Pretraining is critical** — ViT without pretraining on large datasets significantly underperforms CNNs.
+3. **Hybrid architectures** combine convolutional stems with Transformer encoders for better data efficiency.
+
+Transformers have fundamentally changed how we think about vision architectures, and their impact on remote sensing is still unfolding.

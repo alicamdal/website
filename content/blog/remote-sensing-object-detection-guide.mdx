@@ -1,0 +1,57 @@
+---
+title: "Object Detection in Remote Sensing: Challenges and Approaches"
+date: "2024-02-10"
+tags: ["remote-sensing", "object-detection", "aerial-imagery"]
+excerpt: "Why standard detection models struggle with aerial imagery, and how to adapt them for overhead perspectives."
+---
+
+Object detection is one of the most practically impactful computer vision tasks in remote sensing — from counting vehicles in parking lots to monitoring construction activity from satellite imagery. Yet standard detectors trained on datasets like COCO or ImageNet perform surprisingly poorly on aerial imagery without adaptation.
+
+## Why Standard Detectors Struggle
+
+Aerial imagery violates many of the assumptions baked into common detection datasets:
+
+- **Scale extremes**: Objects can span from a few pixels (distant vehicles) to thousands (airport runways). COCO anchors are tuned for human-scale objects.
+- **Arbitrary orientation**: Ground-level cameras have a preferred up direction; aerial cameras do not. A rotated car is still a car.
+- **Dense packing**: Parking lots, ports, and cities have orders-of-magnitude more objects per image than typical detection benchmarks.
+- **Background dominance**: Most pixels in aerial imagery are background. This creates severe foreground-background class imbalance.
+
+## Key Adaptations
+
+### 1. Oriented Bounding Boxes (OBB)
+
+Instead of axis-aligned boxes, oriented detectors output `(x, y, w, h, θ)` — a bounding box with a rotation angle. Datasets like DOTA and HRSC2016 provide OBB annotations.
+
+```python
+# Example: loading an OBB dataset with MMRotate
+from mmrotate.datasets import DOTADataset
+
+dataset = DOTADataset(
+    ann_file='data/dota/train/annfiles/',
+    pipeline=train_pipeline,
+    img_prefix='data/dota/train/images/'
+)
+```
+
+### 2. Multi-Scale Detection
+
+Aerial objects span extreme scale ranges. Feature Pyramid Networks (FPN) with additional fine-grained levels (P2, P1) dramatically improve small object recall.
+
+### 3. Anchor-Free Detectors
+
+FCOS and CenterNet avoid anchor scale/ratio hyperparameter tuning, which is especially convenient when object aspect ratios differ greatly from COCO statistics.
+
+## Recommended Datasets
+
+| Dataset | Task | Scale | Notes |
+|---------|------|-------|-------|
+| DOTA v2 | OBB detection | 11,268 images | 18 categories, large scale variation |
+| xView | HBB detection | 1,400+ images | Satellite, 60 categories |
+| VEDAI | Vehicle detection | 1,200 images | Multi-spectral |
+| ISPRS Potsdam | Segmentation | 38 patches | High-res urban |
+
+## Practical Pipeline
+
+A typical aerial detection pipeline involves tiling large images into overlapping chips (e.g. 1024×1024 with 20% overlap), running inference on each chip, then merging predictions with NMS. This tiling strategy is essential for preserving fine detail in very high-resolution imagery.
+
+The field is moving quickly — foundation models pretrained on large-scale satellite imagery are beginning to show strong zero-shot detection capabilities, potentially changing how we approach aerial detection entirely.

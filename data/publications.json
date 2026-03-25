@@ -1,0 +1,38 @@
+[
+  {
+    "title": "[PLACEHOLDER] Efficient Object Detection in Low-Light Aerial Conditions",
+    "authors": "[YOUR NAME], Co-Author A, Co-Author B",
+    "venue": "CVPR 2024",
+    "year": 2024,
+    "type": "conference",
+    "abstract": "Lorem ipsum abstract placeholder. This paper presents a novel approach to object detection in challenging low-light conditions for aerial imagery. We propose an architecture that leverages domain adaptation and multi-scale feature extraction to improve detection accuracy in nighttime aerial surveillance scenarios.",
+    "pdf": "#",
+    "arxiv": "#",
+    "code": "#",
+    "bibtex": "@inproceedings{placeholder2024,\n  title={Efficient Object Detection in Low-Light Aerial Conditions},\n  author={[YOUR NAME] and Co-Author A and Co-Author B},\n  booktitle={CVPR},\n  year={2024}\n}"
+  },
+  {
+    "title": "[PLACEHOLDER] Self-Supervised Representation Learning for Remote Sensing",
+    "authors": "[YOUR NAME], Supervisor Name",
+    "venue": "NeurIPS 2023",
+    "year": 2023,
+    "type": "conference",
+    "abstract": "Lorem ipsum abstract placeholder. We introduce a self-supervised pre-training framework tailored for remote sensing imagery, exploiting geographic and temporal correlations as supervisory signals. The resulting representations achieve state-of-the-art performance on multiple downstream remote sensing benchmarks.",
+    "pdf": "#",
+    "arxiv": "#",
+    "code": null,
+    "bibtex": "@inproceedings{placeholder2023,\n  title={Self-Supervised Representation Learning for Remote Sensing},\n  author={[YOUR NAME] and Supervisor Name},\n  booktitle={NeurIPS},\n  year={2023}\n}"
+  },
+  {
+    "title": "[PLACEHOLDER] A Survey of Vision Transformers for Remote Sensing Dense Prediction",
+    "authors": "[YOUR NAME], et al.",
+    "venue": "IEEE TPAMI",
+    "year": 2023,
+    "type": "journal",
+    "abstract": "Lorem ipsum abstract placeholder. This survey provides a comprehensive overview of Vision Transformer architectures adapted for dense prediction tasks in remote sensing, covering semantic segmentation, object detection, and change detection. We systematically compare methods and identify open research challenges.",
+    "pdf": "#",
+    "arxiv": "#",
+    "code": null,
+    "bibtex": "@article{placeholder2023b,\n  title={A Survey of Vision Transformers for Remote Sensing Dense Prediction},\n  author={[YOUR NAME] et al.},\n  journal={IEEE TPAMI},\n  year={2023}\n}"
+  }
+]
