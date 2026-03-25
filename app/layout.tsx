@@ -10,15 +10,14 @@ const lora = Lora({ subsets: ['latin'], variable: '--font-lora' })
 
 export const metadata: Metadata = {
   title: {
-    default: '[YOUR NAME] — PhD Researcher & AI Engineer',
-    template: '%s | [YOUR NAME]',
+    default: 'Ali Camdal — PhD Researcher & AI Engineer',
+    template: '%s | Ali Camdal',
   },
   description: 'PhD student and AI Engineer specializing in Computer Vision & Remote Sensing at the University of Twente, and AI Software Engineer at Baykar Technology.',
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://[YOUR-DOMAIN].com',
-    siteName: '[YOUR NAME]',
+    siteName: 'Ali Camdal',
   },
   robots: { index: true, follow: true },
 }

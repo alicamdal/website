@@ -32,10 +32,10 @@ export default function IndustryProjectPage({ params }: { params: { slug: string
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
-      <nav aria-label="Breadcrumb" className="mb-8 text-sm text-gray-500 dark:text-gray-400 flex items-center gap-2">
-        <Link href="/industry" className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors">Industry Work</Link>
+      <nav aria-label="Breadcrumb" className="mb-8 text-sm text-gray-500 dark:text-gray-400 flex items-center gap-2 min-w-0">
+        <Link href="/industry" className="hover:text-gray-900 dark:hover:text-gray-100 transition-colors flex-shrink-0">Industry Work</Link>
         <span aria-hidden="true">›</span>
-        <span className="text-gray-900 dark:text-slate-100">{project.title}</span>
+        <span className="text-gray-900 dark:text-slate-100 truncate">{project.title}</span>
       </nav>
 
       <section className="mb-8">

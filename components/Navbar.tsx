@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 import { useState } from 'react'
 import ThemeToggle from './ThemeToggle'
@@ -20,14 +21,14 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur">
-      <nav className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+    <header className="sticky top-0 z-50 w-full border-b border-gray-200 dark:border-gray-800 bg-white/90 dark:bg-slate-900/90 backdrop-blur overflow-visible">
+      <nav className="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between overflow-visible">
         <Link
           href="/"
-          className="font-bold text-lg text-gray-900 dark:text-slate-100 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          className="flex-shrink-0 md:translate-y-6 hover:opacity-80 transition-opacity"
           aria-label="Home"
         >
-          [YN]
+          <Image src="/images/logo.svg" alt="Logo" width={96} height={96} className="w-10 h-10 md:w-24 md:h-24 drop-shadow-lg" />
         </Link>
 
         {/* Desktop nav */}

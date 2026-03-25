@@ -1,38 +1,62 @@
 [
   {
-    "title": "[PLACEHOLDER] Efficient Object Detection in Low-Light Aerial Conditions",
-    "authors": "[YOUR NAME], Co-Author A, Co-Author B",
-    "venue": "CVPR 2024",
-    "year": 2024,
-    "type": "conference",
-    "abstract": "Lorem ipsum abstract placeholder. This paper presents a novel approach to object detection in challenging low-light conditions for aerial imagery. We propose an architecture that leverages domain adaptation and multi-scale feature extraction to improve detection accuracy in nighttime aerial surveillance scenarios.",
+    "title": "Machine learning-assisted pesticide detection on a flexible surface-enhanced Raman scattering substrate prepared by silver nanoparticles",
+    "authors": "F. Sahin, N. Celik, A. Camdal, M. Sakir, A. Ceylan, M. Ruzi, M. S. Onses",
+    "venue": "ACS Applied Nano Materials",
+    "year": 2022,
+    "type": "journal",
+    "abstract": "We present a flexible SERS substrate prepared from silver nanoparticles combined with machine learning for highly sensitive and selective pesticide detection. The approach enables practical field-deployable sensing with improved accuracy over conventional methods.",
     "pdf": "#",
-    "arxiv": "#",
-    "code": "#",
-    "bibtex": "@inproceedings{placeholder2024,\n  title={Efficient Object Detection in Low-Light Aerial Conditions},\n  author={[YOUR NAME] and Co-Author A and Co-Author B},\n  booktitle={CVPR},\n  year={2024}\n}"
-  },
-  {
-    "title": "[PLACEHOLDER] Self-Supervised Representation Learning for Remote Sensing",
-    "authors": "[YOUR NAME], Supervisor Name",
-    "venue": "NeurIPS 2023",
-    "year": 2023,
-    "type": "conference",
-    "abstract": "Lorem ipsum abstract placeholder. We introduce a self-supervised pre-training framework tailored for remote sensing imagery, exploiting geographic and temporal correlations as supervisory signals. The resulting representations achieve state-of-the-art performance on multiple downstream remote sensing benchmarks.",
-    "pdf": "#",
-    "arxiv": "#",
+    "arxiv": null,
     "code": null,
-    "bibtex": "@inproceedings{placeholder2023,\n  title={Self-Supervised Representation Learning for Remote Sensing},\n  author={[YOUR NAME] and Supervisor Name},\n  booktitle={NeurIPS},\n  year={2023}\n}"
+    "bibtex": "@article{sahin2022pesticide,\n  title={Machine learning-assisted pesticide detection on a flexible surface-enhanced Raman scattering substrate prepared by silver nanoparticles},\n  author={Sahin, F. and Celik, N. and Camdal, A. and Sakir, M. and Ceylan, A. and Ruzi, M. and Onses, M. S.},\n  journal={ACS Applied Nano Materials},\n  volume={5},\n  number={9},\n  pages={13112--13122},\n  year={2022}\n}"
   },
   {
-    "title": "[PLACEHOLDER] A Survey of Vision Transformers for Remote Sensing Dense Prediction",
-    "authors": "[YOUR NAME], et al.",
-    "venue": "IEEE TPAMI",
+    "title": "Disintegration and Machine-Learning-Assisted Identification of Bacteria on Antimicrobial and Plasmonic Ag–CuxO Nanostructures",
+    "authors": "F. Sahin, A. Camdal, G. Demirel Sahin, A. Ceylan, M. Ruzi, M. S. Onses",
+    "venue": "ACS Applied Materials & Interfaces",
     "year": 2023,
     "type": "journal",
-    "abstract": "Lorem ipsum abstract placeholder. This survey provides a comprehensive overview of Vision Transformer architectures adapted for dense prediction tasks in remote sensing, covering semantic segmentation, object detection, and change detection. We systematically compare methods and identify open research challenges.",
+    "abstract": "This work demonstrates antimicrobial Ag–CuxO nanostructures capable of both disintegrating bacteria and enabling machine-learning-assisted identification via SERS, offering a dual-function platform for rapid pathogen detection.",
     "pdf": "#",
-    "arxiv": "#",
+    "arxiv": null,
     "code": null,
-    "bibtex": "@article{placeholder2023b,\n  title={A Survey of Vision Transformers for Remote Sensing Dense Prediction},\n  author={[YOUR NAME] et al.},\n  journal={IEEE TPAMI},\n  year={2023}\n}"
+    "bibtex": "@article{sahin2023bacteria,\n  title={Disintegration and Machine-Learning-Assisted Identification of Bacteria on Antimicrobial and Plasmonic Ag--CuxO Nanostructures},\n  author={Sahin, F. and Camdal, A. and Demirel Sahin, G. and Ceylan, A. and Ruzi, M. and Onses, M. S.},\n  journal={ACS Applied Materials \\& Interfaces},\n  volume={15},\n  number={9},\n  pages={11563--11574},\n  year={2023}\n}"
+  },
+  {
+    "title": "Indomethacin prevents TGF-β-induced epithelial-to-mesenchymal transition in pancreatic cancer cells; evidence by Raman spectroscopy",
+    "authors": "G. Sezer, M. S. Onses, M. Sakir, F. Sahin, A. Camdal, Z. Sezer, A. Inal, Z. Ciftci",
+    "venue": "Spectrochimica Acta Part A",
+    "year": 2022,
+    "type": "journal",
+    "abstract": "Using Raman spectroscopy, we provide molecular-level evidence that indomethacin inhibits TGF-β-induced epithelial-to-mesenchymal transition in pancreatic cancer cells, suggesting its potential as a therapeutic agent.",
+    "pdf": "#",
+    "arxiv": null,
+    "code": null,
+    "bibtex": "@article{sezer2022indomethacin,\n  title={Indomethacin prevents TGF-{\\beta}-induced epithelial-to-mesenchymal transition in pancreatic cancer cells; evidence by Raman spectroscopy},\n  author={Sezer, G. and Onses, M. S. and Sakir, M. and Sahin, F. and Camdal, A. and Sezer, Z. and Inal, A. and Ciftci, Z.},\n  journal={Spectrochimica Acta Part A},\n  volume={280},\n  pages={121493},\n  year={2022}\n}"
+  },
+  {
+    "title": "Practical SERS substrates by spray coating of silver solutions for deep learning-assisted sensitive antigen identification",
+    "authors": "F. Sahin, G. D. Sahin, A. Camdal, I. Akmayan, T. Ozbek, S. Acar, M. S. Onses",
+    "venue": "Colloids and Surfaces A",
+    "year": 2024,
+    "type": "journal",
+    "abstract": "We report a scalable spray-coating method to fabricate SERS substrates from silver solutions, combined with deep learning for accurate and sensitive antigen identification, enabling low-cost diagnostic applications.",
+    "pdf": "#",
+    "arxiv": null,
+    "code": null,
+    "bibtex": "@article{sahin2024sers,\n  title={Practical SERS substrates by spray coating of silver solutions for deep learning-assisted sensitive antigen identification},\n  author={Sahin, F. and Sahin, G. D. and Camdal, A. and Akmayan, I. and Ozbek, T. and Acar, S. and Onses, M. S.},\n  journal={Colloids and Surfaces A},\n  volume={707},\n  pages={135828},\n  year={2024}\n}"
+  },
+  {
+    "title": "An Assessment of the Application of Real-time YOLOv5 Deep Learning Algorithm in Unmanned Surface Vessels for Environmental Maintenance: Some Preliminary Results",
+    "authors": "A. Camdal, B. Basu, A. Stanio",
+    "venue": "Proceedings of the 32nd European Safety and Reliability Conference (ESREL 2022)",
+    "year": 2022,
+    "type": "conference",
+    "abstract": "We assess the real-time performance of YOLOv5 for detecting and tracking debris on water surfaces from an Unmanned Surface Vessel, with AI and embedded applications built from scratch in C++, Python, and PyTorch.",
+    "pdf": "https://doi.org/10.3850/978-981-18-5183-4_S30-05-605-cd",
+    "arxiv": null,
+    "code": null,
+    "bibtex": "@inproceedings{camdal2022yolov5,\n  title={An Assessment of the Application of Real-time YOLOv5 Deep Learning Algorithm in Unmanned Surface Vessels for Environmental Maintenance},\n  author={Camdal, A. and Basu, B. and Stanio, A.},\n  booktitle={Proceedings of the 32nd European Safety and Reliability Conference (ESREL 2022)},\n  year={2022},\n  doi={10.3850/978-981-18-5183-4_S30-05-605-cd}\n}"
   }
 ]

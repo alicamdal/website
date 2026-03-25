@@ -1,8 +1,8 @@
 const socialLinks = [
-  { href: 'https://github.com/[USERNAME]', label: 'GitHub' },
-  { href: 'https://linkedin.com/in/[USERNAME]', label: 'LinkedIn' },
+  { href: 'https://github.com/alicamdal', label: 'GitHub' },
+  { href: 'https://linkedin.com/in/alicamdal', label: 'LinkedIn' },
   { href: 'https://scholar.google.com/citations?user=[SCHOLAR_ID]', label: 'Google Scholar' },
-  { href: 'mailto:[EMAIL]@utwente.nl', label: 'Email' },
+  { href: 'mailto:alicamdal0@gmail.com', label: 'Email' },
 ]
 
 export default function Footer() {
@@ -10,7 +10,7 @@ export default function Footer() {
     <footer className="border-t border-gray-200 dark:border-gray-800 bg-white dark:bg-slate-900 mt-auto">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
         <p className="text-sm text-gray-500 dark:text-gray-400">
-          © {new Date().getFullYear()} [YOUR NAME]. All rights reserved.
+          © {new Date().getFullYear()} Ali Camdal. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
           {socialLinks.map(({ href, label }) => (
